@@ -89,23 +89,7 @@ The system is designed using a **fully automated AWS workflow**.
 
 ---
 
-## Output Example
 
-**Email Summary Example:**
-
-Nifty500 Screener — 2025-11-10
-Matches: 8
-
-TICKER PRICE RSI VOLUME
-RELIANCE.NS ₹2755.40 62.4 8,234,200
-TCS.NS ₹3802.75 58.3 4,652,110
-HDFCBANK.NS ₹1568.10 55.9 7,842,330
-...
-Full CSV report uploaded to:
-s3://nifty500-reports-umar/reports/nifty500_2025-11-10.csv
-
-
----
 
 ## Performance and Optimization
 
