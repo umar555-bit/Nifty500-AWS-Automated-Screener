@@ -8,7 +8,7 @@ Objective
 
 The purpose of this project is to automate daily stock analysis to identify potential breakout and momentum stocks.
 The system runs precisely at 2:00 PM IST, a period when the market typically consolidates and true intraday momentum becomes visible.
-This timing provides traders and analysts sufficient time to act on the insights before market close.
+This timing provides traders and analysts sufficient time to act on insights before market close.
 
 The project also intelligently handles:
 
@@ -111,35 +111,35 @@ Full CSV report uploaded to S3: nifty500-reports-umar/reports/nifty500_2025-11-1
 
 Performance and Optimization
 
-Execution Time: Under 120 seconds for 500 stocks.
+Execution Time: Under 120 seconds for 500 stocks
 
-Cost Optimization: EC2 instance is active only during processing; stopped automatically afterward.
+Cost Optimization: EC2 instance is active only during processing; stopped automatically afterward
 
-Error Handling: Skips delisted or missing tickers to prevent runtime errors.
+Error Handling: Skips delisted or missing tickers to prevent runtime errors
 
-Market Awareness: Automatically detects weekends and official NSE holidays.
+Market Awareness: Automatically detects weekends and official NSE holidays
 
-Data Persistence: Stores each day’s results in a versioned S3 folder.
+Data Persistence: Stores each day’s results in a versioned S3 folder
 
 Security and IAM
 Role	Permissions
 Lambda Role	ec2:DescribeInstances, ec2:StartInstances, logs:*
 EC2 Role	s3:PutObject, ses:SendEmail, ec2:StopInstances
 S3 Bucket Policy	Restricted access to EC2 instance role only
-
 Results Storage
 
 S3 Bucket: nifty500-reports-umar
 
 Report Path: reports/nifty500_<date>.csv
 
-Retention: Reports stored indefinitely for performance tracking and analysis.
+Retention: Reports stored indefinitely for performance tracking and analysis
 
 Author
 
 Umar Mateen
 B.Tech in Engineering (AMU)
 Data Analyst & Data Engineer
+
 Skills: Python, SQL, Power BI, AWS, Machine Learning, Data Analytics
 Email: umarmateenzhcetamu@gmail.com
 
